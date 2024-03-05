@@ -70,9 +70,9 @@
             <div class="computer-card">
                 <h1>Tarefas Básicas</h1>
                 <h2>Locação:</h2>
-                <p class="price">R$200,00 / mês</p>
+                <p class="price" id="primary-tenancy">R$200,00 / mês</p>
                 <h2>Venda:</h2>
-                <p class="price">R$2.700,00</p>
+                <p class="price" id="primary-sale">R$2.700,00</p>
                 <p class="subtitle">Configurações:</p>
                 <ul class="config-list">
                     <li class="list-item">
@@ -116,18 +116,18 @@
                 </ul>
                 <div class="config-quantity">
                     <p>Quantidade:<p>
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
+                    <button id="primary-minus-button">-</button>
+                    <span id="primary-quantity">1</span>
+                    <button id="primary-plus-button">+</button>
                 </div>
                 <button class="request-button">Solicitar</button>
             </div>
             <div class="computer-card computer-median">
                 <h1>Tarefas Medianas</h1>
                 <h2>Locação:</h2>
-                <p class="price">R$200,00 / mês</p>
+                <p class="price"id="secondary-tenancy">R$300,00 / mês</p>
                 <h2>Venda:</h2>
-                <p class="price">R$2.700,00</p>
+                <p class="price" id="secondary-sale">R$3.300,00</p>
                 <p class="subtitle">Configurações:</p>
                 <ul class="config-list">
                     <li class="list-item">
@@ -171,9 +171,9 @@
                 </ul>
                 <div class="config-quantity">
                     <p>Quantidade:<p>
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
+                    <button id="secondary-minus-button">-</button>
+                    <span id="secondary-quantity">1</span>
+                    <button id="secondary-plus-button">+</button>
                 </div>
                 <button class="request-button">Solicitar</button>
             </div>
@@ -227,4 +227,5 @@
         </footer>
     </footer>
 </body>
+<script src="index.js"></script>
 </html>

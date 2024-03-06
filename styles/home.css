@@ -48,3 +48,14 @@
     background-color: #A60311;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 768px) {
+    .action {
+        margin-left: 80px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .action {
+        margin-left: 100px;
+    }
+}

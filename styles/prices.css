@@ -167,3 +167,9 @@
 .computer-median .request-button:hover {
     background-color: grey;
 }
+
+@media only screen and (min-width: 768px) {
+    .prices h3 {
+        width: 700px;
+    }
+}

@@ -49,13 +49,27 @@
     cursor: pointer;
 }
 
+/* Media queries desktop*/
+/* Tablet */
 @media only screen and (min-width: 768px) {
     .action {
         margin-left: 80px;
     }
 }
+@media only screen and (min-width: 992px) {
+    .action {
+        margin-left: 100px;
+    }
+}
+/* Desktop */
 @media only screen and (min-width: 1200px) {
     .action {
         margin-left: 100px;
+    }
+}
+/* Original screen */
+@media only screen and (min-width: 1920px) {
+    .action {
+        margin-left: 220px;
     }
 }

@@ -89,6 +89,8 @@ header .request-button:hover {
     cursor: pointer;
 }
 
+/* Media queries desktop*/
+/* Tablet */
 @media only screen and (min-width: 768px) {
     .menu {
         margin-left: 20px;
@@ -109,13 +111,55 @@ header .request-button:hover {
         width: 150px;
     }
 }
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .menu {
+        margin-left: 30px;
+        gap: 50px;
+    }
+    header .request-button {
+        margin-left: 400px;
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .menu {
+        margin-left: 100px;
+        gap: 100px;
+    }
+    header .request-button {
+        margin-left: 300px;
+        width: 200px;
+    }
+}
 @media only screen and (min-width: 1440px) {
     .menu {
         margin-left: 100px;
         gap: 100px;
     }
     header .request-button {
-        width: 200px;
         margin-left: 400px;
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .menu {
+        margin-left: 50px;
+        gap: 100px;
+    }
+    header .request-button {
+        width: 200px;
+        margin-left: 600px;
+    }
+}
+/* Original screen */
+@media only screen and (min-width: 1920px) {
+    .menu {
+        margin-left: 100px;
+        gap: 100px;
+    }
+    header .request-button {
+        width: 200px;
+        margin-left: 600px;
     }
 }

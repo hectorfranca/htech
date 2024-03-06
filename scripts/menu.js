@@ -22,18 +22,30 @@ function enableScroll() {
 // Menu item
 serviceItem.addEventListener('click', () => {
     window.scrollTo(0, servicesSection.offsetTop - 80)
-    menu.style.display = 'none';
-    enableScroll()
+
+    if (menuMobile.offsetParent != null) {
+        menu.style.display = 'none';
+        menuMobile.style.backgroundImage = "url('./assets/menu.png')"
+        enableScroll()
+    }
 })
 priceItem.addEventListener('click', () => {
     window.scrollTo(0, pricesSection.offsetTop - 80)
-    menu.style.display = 'none';
-    enableScroll()
+
+    if (menuMobile.offsetParent != null) {
+        menu.style.display = 'none';
+        menuMobile.style.backgroundImage = "url('./assets/menu.png')"
+        enableScroll()
+    }
 })
 aboutItem.addEventListener('click', () => {
     window.scrollTo(0, aboutSection.offsetTop - 80)
-    menu.style.display = 'none';
-    enableScroll()
+
+    if (menuMobile.offsetParent != null) {
+        menu.style.display = 'none';
+        menuMobile.style.backgroundImage = "url('./assets/menu.png')"
+        enableScroll()
+    }
 })
 
 topButton.addEventListener('click', () => window.scrollTo(0, 0))
@@ -42,9 +54,11 @@ topButton.addEventListener('click', () => window.scrollTo(0, 0))
 menuMobile.addEventListener('click', () => {
     if (menu.style.display === 'flex') {
         menu.style.display = 'none';
+        menuMobile.style.backgroundImage = "url('./assets/menu.png')"
         enableScroll()
     } else {
         menu.style.display = 'flex';
+        menuMobile.style.backgroundImage = "url('./assets/close.png')"
         disableScroll()
     }
 })

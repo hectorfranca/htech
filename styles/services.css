@@ -22,7 +22,7 @@
     font-family: "Roboto", sans-serif;
     color: black;
 }
-.card-container {
+.services-container {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -74,5 +74,29 @@
     }
     .services-card {
         width: 350px;
+    }
+}
+/* Smartphones */
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    .services h2 {
+        width: 300px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .services h3 {
+        width: 300px;
+        font-size: 18px;
+    }
+    .services-container {
+        flex-direction: column;
+    }
+    .services-card {
+        width: 300px;
+    }
+    .services-card h1 {
+        font-size: 20px;
+    }
+    .services-card h2 {
+        font-size: 16px;
     }
 }

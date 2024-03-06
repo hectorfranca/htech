@@ -73,3 +73,26 @@
         margin-left: 220px;
     }
 }
+/* Smartphone */
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    .home {
+        height: 500px;
+        align-items: center;
+    }
+    .action {
+        width: 250px;
+        margin-left: 0;
+        align-items: center;
+    }
+    .action h2 {
+        width: 250px;
+        font-size: 26px;
+    }
+    .action h3 {
+        width: 250px;
+        font-size: 18px;
+    }
+    .home .more-button {
+        align-self: flex-start;
+    }
+}

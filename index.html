@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="stylesheet" href="styles/prices.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <title>HTech</title>
+    <title>HTech - Simplifique com Locações</title>
 </head>
 <body>
     <section class="informations">
@@ -29,9 +30,9 @@
             <h1>Tech</h1>
         </a>
         <ul class="menu">
-            <li class="menu-item">Serviços</li>
-            <li class="menu-item">Preços</li>
-            <li class="menu-item">Sobre</li>
+            <li class="menu-item" id="service-item">Serviços</li>
+            <li class="menu-item" id="price-item">Preços</li>
+            <li class="menu-item" id="about-item">Sobre</li>
         </ul>
         <button class="request-button">Solicitar serviço</button>
     </header>
@@ -70,9 +71,9 @@
             <div class="computer-card">
                 <h1>Tarefas Básicas</h1>
                 <h2>Locação:</h2>
-                <p class="price" id="primary-tenancy">R$200,00 / mês</p>
+                <p class="price" id="primary-tenancy">R$ 200,00 / mês</p>
                 <h2>Venda:</h2>
-                <p class="price" id="primary-sale">R$2.700,00</p>
+                <p class="price" id="primary-sale">R$ 2.700,00</p>
                 <p class="subtitle">Configurações:</p>
                 <ul class="config-list">
                     <li class="list-item">
@@ -125,9 +126,9 @@
             <div class="computer-card computer-median">
                 <h1>Tarefas Medianas</h1>
                 <h2>Locação:</h2>
-                <p class="price"id="secondary-tenancy">R$300,00 / mês</p>
+                <p class="price"id="secondary-tenancy">R$ 300,00 / mês</p>
                 <h2>Venda:</h2>
-                <p class="price" id="secondary-sale">R$3.300,00</p>
+                <p class="price" id="secondary-sale">R$ 3.300,00</p>
                 <p class="subtitle">Configurações:</p>
                 <ul class="config-list">
                     <li class="list-item">
@@ -217,8 +218,9 @@
         <body>
             <h2>Simplifique com Locações</h2>
             <div class="social-media">
-                <a href="https://www.google.com.br/?hl=pt-BR"><img src="assets/instagram.png" alt="instagram.png" width="30" height="30"></a>
-                <a href="https://www.google.com.br/?hl=pt-BR"><img src="assets/facebook.png" alt="facebook.png" width="30" height="30"></a>
+                <a href="#"><img src="assets/instagram.png" alt="instagram.png" width="30" height="30"></a>
+                <a href="#"><img src="assets/facebook.png" alt="facebook.png" width="30" height="30"></a>
+                <button class="top-link"></button>
             </div>
         </body>
         <span class="footer-line"></span>
@@ -227,5 +229,6 @@
         </footer>
     </footer>
 </body>
-<script src="index.js"></script>
+<script src="scripts/services.js"></script>
+<script src="scripts/menu.js"></script>
 </html>

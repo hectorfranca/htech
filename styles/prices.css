@@ -194,4 +194,7 @@
         padding: 20px 5px 20px 5px;
         align-items: center;
     }
+    .config-list {
+        width: 300px;
+    }
 }

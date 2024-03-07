@@ -12,7 +12,7 @@ secondarySale = document.getElementById('secondary-sale')
 primaryTenancyPrice = 200
 primarySalePrice = 2700
 secondaryTenancyPrice = 300
-secondarySalePrice = 3300
+secondarySalePrice = 3900
 
 // Primary
 primaryMinusButton.addEventListener('click', () => {

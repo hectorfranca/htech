@@ -43,6 +43,11 @@
     font-weight: bold;
     font-family: "Sora", sans-serif;
     transition-duration: 200ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 .home .more-button:hover {
     background-color: #A60311;

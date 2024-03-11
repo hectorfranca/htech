@@ -93,4 +93,7 @@ footer h2 {
     .top-link {
         display: none;
     }
+    .footer-copyright p {
+        font-size: 14px;
+    }
 }

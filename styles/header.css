@@ -29,6 +29,7 @@
 header {
     position: sticky;
     top: 0;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,7 +54,6 @@ header {
 }
 .menu-mobile {
     display: none;
-    z-index: 1;
     width: 40px;
     height: 40px;
     background-color: #F20F38;
@@ -68,6 +68,7 @@ header {
 .menu {
     margin-left: 100px;
     display: flex;
+    z-index: 1;
     flex-direction: row;
     align-items: center;
     justify-content: center;

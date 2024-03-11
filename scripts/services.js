@@ -11,8 +11,10 @@ secondarySale = document.getElementById('secondary-sale')
 
 primaryTenancyPrice = 200
 primarySalePrice = 2700
+primaryMaxQuantity = 8
 secondaryTenancyPrice = 300
 secondarySalePrice = 3900
+secondaryMaxQuantity = 5
 
 // Primary
 primaryMinusButton.addEventListener('click', () => {
@@ -26,7 +28,7 @@ primaryMinusButton.addEventListener('click', () => {
 })
 
 primaryPlusButton.addEventListener('click', () => {
-    if (parseInt(primaryQuantity.innerText) < 10) {
+    if (parseInt(primaryQuantity.innerText) < primaryMaxQuantity) {
         primaryQuantity.innerText = parseInt(primaryQuantity.innerText) + 1
         newTenancyValue = parseFloat(primaryTenancy.innerText.replace('R$', '').replace('.', '').replace(' / mês'), '') + primaryTenancyPrice
         newSaleValue = parseFloat(primarySale.innerText.replace('R$', '').replace('.', '')) + primarySalePrice
@@ -47,7 +49,7 @@ secondaryMinusButton.addEventListener('click', () => {
 })
 
 secondaryPlusButton.addEventListener('click', () => {
-    if (parseInt(secondaryQuantity.innerText) < 10) {
+    if (parseInt(secondaryQuantity.innerText) < secondaryMaxQuantity) {
         secondaryQuantity.innerText = parseInt(secondaryQuantity.innerText) + 1
         newTenancyValue = parseFloat(secondaryTenancy.innerText.replace('R$', '').replace('.', '').replace(' / mês'), '') + secondaryTenancyPrice
         newSaleValue = parseFloat(secondarySale.innerText.replace('R$', '').replace('.', '')) + secondarySalePrice
